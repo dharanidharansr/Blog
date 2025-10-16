@@ -5,7 +5,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Blog/',  // This should match your GitHub repository name
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
