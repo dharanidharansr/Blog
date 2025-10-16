@@ -62,68 +62,30 @@ export default function WhyStartBlog() {
             but finally got some time today so here we are.
           </p>
           <p className="text-zinc-400 mb-6">
-            tldr; i'm{" "}
-            <a
-              href="https://romeirofernandes.tech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#38bdf8]"
-            >
-              romeiro
-            </a>
-            , i build websites. i needed a way to share things i build, found
-            interesting, and learned. having a personal blog didn’t seem that
+            tldr; i'm dharanidharansr, i build websites and explore new tech. i needed a way to share things i build, found
+            interesting, and learned. having a personal blog didn't seem that
             bad of a decision to me so here we are :)
           </p>
           <p className="text-zinc-400 mb-6">
-            for anyone who is new here, hello! i'm{" "}
-            <a
-              href="https://romeirofernandes.tech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#38bdf8]"
-            >
-              romeiro
-            </a>
-            . i'm currently pursuing (sem 5) a bachelor’s in computer
-            engineering from fr. crce, bandra.
+            for anyone who is new here, hello! i'm dharanidharansr. i'm currently pursuing a bachelor's in computer
+            engineering and love exploring the world of technology.
           </p>
           <p className="text-zinc-400 mb-6">
-            i love building websites and have been at it since january 2025,
-            around 8 months now. i'm sort of infamous for making websites
-            unnecessarily.
+            i love building websites and have been exploring tech for a while now. i'm sort of infamous for being a fast cloner
+            and making things work quickly.
           </p>
           <p className="text-zinc-400 mb-6">
-            i read some tech blogs every now and then (
-            <a
-              href="https://simonwillison.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#38bdf8]"
-            >
-              simon willison
-            </a>
-            ), watch{" "}
-            <a
-              href="https://www.youtube.com/@t3dotgg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#38bdf8]"
-            >
-              theo
-            </a>
-            's videos if bored during college lectures, and scroll twitter to
-            check up on any new updates in the tech side (well, i stalk some
-            people for fpl news too but that story is for another day).
+            i read some tech blogs every now and then, watch tech content when bored, and scroll through social media to
+            check up on any new updates in the tech side. i also enjoy playing cricket sometimes.
           </p>
           <p className="text-zinc-400 mb-6">
             so why start a blog? i need a place to share updates about myself
             and anything new that i experiment with. why do i need to share?{" "}
             <span className="italic">
-              well, it’ll be fun to read this a few years or months later, i'm
+              well, it'll be fun to read this a few years or months later, i'm
               sure of it.
             </span>{" "}
-            hell, if even one of y’all get something from this, it’ll be a win
+            hell, if even one of y'all get something from this, it'll be a win
             for me.
           </p>
         </section>
@@ -145,32 +107,23 @@ export default function WhyStartBlog() {
             what am i doing currently?
           </h2>
           <p className="text-zinc-400 mb-6">
-            slightly focused towards dsa because i will have placements in a few
-            months. i'm working in an internship for a startup (ends oct 3rd).
-            i'm also the tech lead of codestorm crce, where we promote dsa &amp;
-            problem solving and host events related to the same.
+            currently focused on learning new technologies and building projects. i'm pursuing my computer engineering degree
+            and constantly exploring the latest in web development and tech trends.
           </p>
           <p className="text-zinc-400 mb-6">
-            i participate in hackathons like my life depends on it. i have won 4
-            hackathons so far and have built countless projects during the same.
-            there are too many hackathons upcoming; next one is sandip
-            university’s sunhacks on 21st august in nashik.
+            i participate in various tech events and competitions. i've participated in hackathons like BYTS INDIA HACKATHON 1.0
+            and paper presentations like Synergize'25 where I secured 2nd place.
           </p>
           <p className="text-zinc-400 mb-6">
-            what else - i love watching the Premier League and i'm an fpl addict
-            to say the least. i spend a lot more time than i should on making
-            transfers.
-          </p>
-          <p className="text-zinc-400 mb-6 italic">
-            ps: got my sem 4 sgpa while writing (9.46) - highest out of all the
-            sems so far, wooohooo!!
+            what else - i love playing cricket and am passionate about exploring new technologies. 
+            i spend time working on personal projects and contributing to open source.
           </p>
         </section>
 
         <section className="mb-8">
           <p className="text-zinc-400 mb-6">
-            go dm me on twitter or something and see you in the next blog (if
-            there’s one).
+            feel free to connect with me on social media and see you in the next blog (if
+            there's one).
           </p>
         </section>
 
@@ -182,47 +135,36 @@ export default function WhyStartBlog() {
           </h2>
           <ul className="list-none text-zinc-400">
             <li className="mb-2">
-              twitter:{" "}
+              instagram:{" "}
               <a
-                href="https://twitter.com/whotookromeiro"
+                href="https://www.instagram.com/_patrick_bateman.18"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#38bdf8] underline"
               >
-                @whotookromeiro
+                @_patrick_bateman.18
               </a>
             </li>
             <li className="mb-2">
               linkedin:{" "}
               <a
-                href="https://linkedin.com/in/romeirofernandes"
+                href="https://linkedin.com/in/dharanidharansr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#38bdf8] underline"
               >
-                romeirofernandes
+                dharanidharansr
               </a>
             </li>
             <li className="mb-2">
               github:{" "}
               <a
-                href="https://github.com/romeirofernandes"
+                href="https://github.com/dharanidharansr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#38bdf8] underline"
               >
-                romeirofernandes
-              </a>
-            </li>
-            <li className="mb-2">
-              portfolio:{" "}
-              <a
-                href="https://romeirofernandes.tech"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#38bdf8] underline"
-              >
-                romeirofernandes.tech
+                dharanidharansr
               </a>
             </li>
           </ul>
