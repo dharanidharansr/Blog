@@ -13,23 +13,34 @@ export default function WhyStartBlog() {
 
   useEffect(() => {
     async function updateViews() {
-      const ref = doc(db, "blogViews", BLOG_ID);
-      const snap = await getDoc(ref);
+      if (!db) {
+        console.warn('Firebase not configured, view count will not be updated');
+        setViews(0);
+        return;
+      }
 
-      const localKey = `viewed_${BLOG_ID}`;
-      if (!localStorage.getItem(localKey)) {
-        if (snap.exists()) {
-          await updateDoc(ref, { views: increment(1) });
-          const updated = await getDoc(ref);
-          setViews(updated.data().views);
+      try {
+        const ref = doc(db, "blogViews", BLOG_ID);
+        const snap = await getDoc(ref);
+
+        const localKey = `viewed_${BLOG_ID}`;
+        if (!localStorage.getItem(localKey)) {
+          if (snap.exists()) {
+            await updateDoc(ref, { views: increment(1) });
+            const updated = await getDoc(ref);
+            setViews(updated.data().views);
+          } else {
+            await setDoc(ref, { views: 1 });
+            setViews(1);
+          }
+          localStorage.setItem(localKey, "true");
         } else {
-          await setDoc(ref, { views: 1 });
-          setViews(1);
+          // Just fetch the current count
+          setViews(snap.exists() ? snap.data().views : 0);
         }
-        localStorage.setItem(localKey, "true");
-      } else {
-        // Just fetch the current count
-        setViews(snap.exists() ? snap.data().views : 0);
+      } catch (error) {
+        console.error('Error updating view count:', error);
+        setViews(0);
       }
     }
     updateViews();

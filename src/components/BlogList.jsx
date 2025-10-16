@@ -17,9 +17,20 @@ function useViewCount(slug) {
 	const [views, setViews] = useState(0);
 	useEffect(() => {
 		async function fetchViews() {
-			const ref = doc(db, "blogViews", slug);
-			const snap = await getDoc(ref);
-			setViews(snap.exists() ? snap.data().views : 0);
+			if (!db) {
+				console.warn('Firebase not configured, using default view count');
+				setViews(0);
+				return;
+			}
+			
+			try {
+				const ref = doc(db, "blogViews", slug);
+				const snap = await getDoc(ref);
+				setViews(snap.exists() ? snap.data().views : 0);
+			} catch (error) {
+				console.error('Error fetching view count:', error);
+				setViews(0);
+			}
 		}
 		fetchViews();
 	}, [slug]);

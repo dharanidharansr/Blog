@@ -11,5 +11,23 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+// Check if Firebase is properly configured
+const isFirebaseConfigured = Object.values(firebaseConfig).every(value => value && value !== 'undefined');
+
+let app;
+let db;
+
+if (isFirebaseConfigured) {
+  try {
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+  } catch (error) {
+    console.error('Firebase initialization failed:', error);
+    db = null;
+  }
+} else {
+  console.warn('Firebase configuration is missing. View counts will not work.');
+  db = null;
+}
+
+export { db };
